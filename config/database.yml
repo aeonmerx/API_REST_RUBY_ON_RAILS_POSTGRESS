@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  password: fbwlRTQWaxpnHWengbvWprpLNdvWj2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: upxvecedpiel3dmmrwr8
+  host: bkww4iwiodx5ae3zzytr-postgresql.services.clever-cloud.com
+  port: 50013
+
+development:
+  <<: *default
+  database: bkww4iwiodx5ae3zzytr
+
+test:
+  <<: *default
+  database: 
+
+production:
+  <<: *default
+  database: bkww4iwiodx5ae3zzytr
